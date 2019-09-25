@@ -1,0 +1,195 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+.js-widget-overlay{
+  z-index: 10001; 
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 1.1;
+  background-color: #000;
+}
+.js-widget-dialog{
+  position: fixed;
+  z-index: 10002;
+  background: #fff;
+  margin: 0 0 0 -120px;
+  left: 20%;
+  top: 5%;
+  /* 
+  left: 50%;
+  top: 30%;
+  width: 200px; 
+  */
+  
+  width: 900px;
+  padding: 10px 20px;
+  border: solid 1px #333
+}
+
+
+.sky_button .label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+.sky_button .label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.sky_button .label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+.sky_btn_float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#F33;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  z-index:1000;
+  animation: bot-to-top 2s ease-out;
+}
+
+.sky_button ul{
+  position:fixed;
+  right:40px;
+  padding-bottom:20px;
+  bottom:80px;
+  z-index:100;
+}
+
+.sky_button ul li{
+  list-style:none;
+  margin-bottom:10px;
+}
+
+.sky_button ul li a{
+  background-color:#F33;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  width:60px;
+  height:60px;
+  display:block;
+}
+
+.sky_button ul:hover{
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+
+.skybtn-my-float{
+  font-size:24px;
+  margin-top:18px;
+}
+
+a#skybtn-menu-share + ul{
+  visibility: hidden;
+}
+
+a#skybtn-menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#skybtn-menu-share i{
+  animation: rotate-in 0.5s;
+}
+
+a#skybtn-menu-share:hover > i{
+  animation: rotate-out 0.5s;
+}
+
+.sky_float_link:hover ~ div.label-container{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+.rock_headline {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 26px;
+  width: 100%;
+  border: none;
+}
+
+.small_thumb img{
+  max-height: 200px;
+  max-width: 200px;
+}
+
+img {
+  max-width : 900px;
+}
+
+
+
+div.sky_gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 220px;
+}
+
+div.sky_gallery:hover {
+  border: 1px solid #777;
+}
+
+div.sky_gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.sky_gallery_desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.h1_elem{
+  font-size: 2.2rem;
+  border: none;
+  width: 100%;
+}
+
+.p_elem{
+  font-size: 1.125rem;
+  border: none;
+  width: 100%;
+}
